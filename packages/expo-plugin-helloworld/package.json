@@ -2,12 +2,13 @@
   "name": "expo-plugin-helloworld",
   "version": "1.0.0",
   "homepage": "/_expo/plugins/expo-plugin-helloworld",
+  "main": "hooks.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "rm -rf dist web-build && expo export:web && mv web-build dist"
+    "build": "rm -rf dist web-build && npx expo export:web && mv web-build dist"
   },
   "dependencies": {
     "expo": "~49.0.7",
